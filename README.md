@@ -1,3 +1,3 @@
-# WizJin Blog
+# wizjin.github.io
 
-Welcome to my blog !
+魔法小屋 - WizJin 的博客

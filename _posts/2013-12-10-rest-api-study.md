@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "REST API学习笔记"
+title:      "REST API 学习笔记"
 date:       2013-12-10 22:37:52
 categories: [Design, Book Review]
 keywords:   [REST]

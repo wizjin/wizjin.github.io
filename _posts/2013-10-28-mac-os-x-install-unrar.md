@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Mac OSX下安装RAR解压工具"
+title:      "Mac OSX 下安装 RAR 解压工具"
 date:       2013-10-28 10:54:14
 categories: [Max OSX]
 keywords:   [Mavericks, rar]

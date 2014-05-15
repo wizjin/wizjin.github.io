@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "制作Mac OSX Mavericks安装盘"
+title:      "制作 Mac OSX Mavericks 安装盘"
 date:       2013-10-27 11:16:17
 categories: [Max OSX]
 keywords:   [Mavericks]

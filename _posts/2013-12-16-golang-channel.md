@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Golang中的Channel"
+title:      "Golang 中的 Channel"
 date:       2013-12-16 22:12:17
 categories: [Golang]
 keywords:   [Golang]

@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Golang使用MongoDB"
+title:      "Golang 使用 MongoDB"
 date:       2013-12-05 20:58:01
 categories: [Golang, Database]
 keywords:   [MongoDB]

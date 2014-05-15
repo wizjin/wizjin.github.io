@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "VIM配置文件"
+title:      "VIM 配置文件"
 date:       2013-10-22 11:51:17
 categories: [Editor]
 keywords:   [Vim, Configure]

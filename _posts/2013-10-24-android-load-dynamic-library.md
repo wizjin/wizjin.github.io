@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Android加载动态连接库"
+title:      "Android 加载动态连接库"
 date:       2013-10-24 10:21:59
 categories: [Android, C/C++]
 keywords:   [Android]

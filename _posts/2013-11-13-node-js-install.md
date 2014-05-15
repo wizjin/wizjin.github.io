@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Node.js安装"
+title:      "Node.js 安装"
 date:       2013-11-13 16:05:17
 categories: [Linux, Javascript]
 keywords:   [Node.js]

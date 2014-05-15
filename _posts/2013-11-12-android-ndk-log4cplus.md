@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Android NDK编译Log4cplus 1.1.1"
+title:      "Android NDK 编译 Log4cplus 1.1.1"
 date:       2013-11-12 10:20:21
 categories: [Android, C/C++]
 keywords:   [Android NDK, log4cplus]

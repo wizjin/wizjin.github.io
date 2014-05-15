@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "安装配置Golang"
+title:      "安装配置 Golang"
 date:       2013-11-24 09:15:57
 categories: [Linux, Golang]
 keywords:   [Golang]

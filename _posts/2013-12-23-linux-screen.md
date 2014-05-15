@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Linux使用screen管理远程会话"
+title:      "Linux 使用 screen 管理远程会话"
 date:       2013-12-23 10:46:54
 categories: [Linux]
 keywords:   [Linux, Screen]

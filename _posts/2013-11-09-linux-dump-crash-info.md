@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "保存Linux程序Crash信息"
+title:      "保存 Linux 程序 Crash 信息"
 date:       2013-11-09 11:55:28
 categories: [Linux, C/C++]
 keywords:   [Linux, Crash]

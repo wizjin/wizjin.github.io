@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "NPAPI中添加Javascript函数"
+title:      "NPAPI 中添加 Javascript 函数"
 date:       2013-11-21 10:20:23
 categories: [Windows, C/C++]
 keywords:   [NPAPI, Scriptable]

@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Windows下使用NPAPI开发浏览器插件"
+title:      "Windows 下使用 NPAPI 开发浏览器插件"
 date:       2013-11-19 09:43:06
 categories: [Windows, C/C++]
 keywords:   [NPAPI]

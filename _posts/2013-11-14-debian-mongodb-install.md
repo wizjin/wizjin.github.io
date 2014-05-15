@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Debian上安装MongoDB"
+title:      "Debian 上安装 MongoDB"
 date:       2013-11-14 10:51:51
 categories: [Linux, Database]
 keywords:   [Mongodb]

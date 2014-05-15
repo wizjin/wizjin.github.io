@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Google开源项目风格指南(C++)"
+title:      "Google 开源项目风格指南(C++)"
 date:       2013-12-11 16:42:24
 categories: [Design, Book Review]
 keywords:   [Coding Standards, C++]

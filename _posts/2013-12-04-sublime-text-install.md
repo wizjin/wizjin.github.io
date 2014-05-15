@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Sublime Text 3安装配置"
+title:      "Sublime Text 3 安装配置"
 date:       2013-12-04 21:46:23
 categories: [Editor]
 keywords:   [Sublime]

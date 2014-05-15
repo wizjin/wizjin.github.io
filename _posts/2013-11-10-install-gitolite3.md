@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "安装配置Gitolite3"
+title:      "安装配置 Gitolite 3"
 date:       2013-11-10 17:33:15
 categories: [Linux, Project]
 keywords:   [Linux, Gitolite]

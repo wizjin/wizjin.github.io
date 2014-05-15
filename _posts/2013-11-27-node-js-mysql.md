@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Node.js连接MySQL数据库"
+title:      "Node.js 连接 MySQL 数据库"
 date:       2013-11-27 15:05:01
 categories: [Linux, Javascript]
 keywords:   [Node.js, MySQL]

@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "UML类图符号备忘"
+title:      "UML 类图符号备忘"
 date:       2013-12-27 11:58:18
 categories: [Design]
 keywords:   [UML]

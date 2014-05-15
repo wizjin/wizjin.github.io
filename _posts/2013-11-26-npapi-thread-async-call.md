@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "NPAPI中线程异步调用"
+title:      "NPAPI 中线程异步调用"
 date:       2013-11-26 11:47:42
 categories: [Windows, C/C++]
 keywords:   [NPAPI]

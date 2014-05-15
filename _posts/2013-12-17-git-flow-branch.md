@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Git-flow分支管理"
+title:      "Git-flow 分支管理"
 date:       2013-12-17 11:09:57
 categories: [Project, Book Review]
 keywords:   [Git]

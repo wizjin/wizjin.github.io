@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Debian上安装Erlang-OTP"
+title:      "Debian 上安装 Erlang-OTP"
 date:       2013-11-15 08:38:50
 categories: [Linux, Erlang]
 keywords:   [Erlang, Debian]

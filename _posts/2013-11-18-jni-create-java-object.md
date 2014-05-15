@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "JNI中构造Java对象的注意点"
+title:      "JNI 中构造 Java 对象的注意点"
 date:       2013-11-18 19:06:39
 categories: [Android, C/C++]
 keywords:   [JNI]

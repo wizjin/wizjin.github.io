@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "生成Github用的SSH密钥"
+title:      "生成 Github 用的 SSH 密钥"
 date:       2013-11-22 11:44:50
 categories: [Mac OSX, Project]
 keywords:   [Mavericks]
