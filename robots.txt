@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /pages/
+Sitemap: http://blog.wizjin.com/sitemap.xml
