@@ -2,6 +2,8 @@
 layout: page
 title: 关于
 permalink: /about/
+mainmenu: 'yes'
+sitemap: 'yes'
 ---
 
 这里是我的魔法小屋，是用来保存我的思绪、经验和知识的港湾。

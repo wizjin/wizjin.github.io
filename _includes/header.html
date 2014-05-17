@@ -2,7 +2,10 @@
 
   <div class="wrap">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <div class="site-title">
+      <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <small>{{ site.tagline }}</small>
+    </div>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -17,9 +20,8 @@
         </svg>
       </a>
       <div class="trigger">
-        <a class="page-link" href="{{ site.baseurl }}/">首页</a>
         {% for page in site.pages %}
-          {% unless page.sitemap.exclude == "yes" %}
+          {% unless page.mainmenu != "yes" or page.url contains "/pages/" %}
             <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endunless %}
         {% endfor %}
