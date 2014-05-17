@@ -3,7 +3,7 @@ layout:     post
 title:      "JNI 中构造 Java 对象的注意点"
 date:       2013-11-18 19:06:39
 categories: [Android, C/C++]
-keywords:   [JNI]
+tags:       [JNI]
 ---
 
 Android NDK，在JNI中构造Java对象时有以下几点需要注意的：

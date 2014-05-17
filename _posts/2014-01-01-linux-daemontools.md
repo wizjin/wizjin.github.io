@@ -3,7 +3,7 @@ layout:     post
 title:      "Linux 下面的进程管理工具 Daemontools"
 date:       2014-01-01 10:42:51
 categories: [Linux]
-keywords:   [Linux, Tools]
+tags:       [Linux, Tools]
 ---
 
 2014年，全新的一年啊！今天想写的是 *Daemontools* 。不过这货不是哪个虚拟光驱，而是 Linux 下的进程管理工具。会用到这个是因为 Golang 写的服务程序不支持 Daemon 模式。反正理由一堆，呵呵！

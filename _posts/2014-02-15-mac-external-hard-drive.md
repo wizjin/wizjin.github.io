@@ -3,7 +3,7 @@ layout:     post
 title:      "Mac/Windows 下移动硬盘清理"
 date:       2014-02-15 13:18:06
 categories: [Mac OSX, Windows]
-keywords:   [Mac OSX, Windows]
+tags:       [Mac OSX, Windows]
 ---
 
 最近比较忙，好久没写 Blog 了。前几天新入了一块移动硬盘，格式化成了 NTFS。总算是在 Mac/Windows 下都能读写了，但是发现一个问题。就是在 Mac 下面会看见 Windows 的系统文件，在 Windows 下又能看见 Mac 下的系统文件，不爽！谁让我有洁癖呢！研究了一下，发下一些解决方案。

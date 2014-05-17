@@ -3,7 +3,7 @@ layout:     post
 title:      "Ruby 是什么？"
 date:       2014-01-13 09:28:35
 categories: [Ruby]
-keywords:   [Ruby]
+tags:       [Ruby]
 ---
 
 上周真是疯狂啊！课程报告、考试集中在一起，差点喘不过气里。哈哈！

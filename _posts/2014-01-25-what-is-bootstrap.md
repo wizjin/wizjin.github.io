@@ -3,7 +3,7 @@ layout:     post
 title:      "Bootstrap 是什么"
 date:       2014-01-25 17:01:33
 categories: [UED]
-keywords:   [Bootstrap, CSS]
+tags:       [Bootstrap, CSS]
 ---
 
 Bootstrap是什么？

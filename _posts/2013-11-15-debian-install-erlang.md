@@ -3,7 +3,7 @@ layout:     post
 title:      "Debian 上安装 Erlang-OTP"
 date:       2013-11-15 08:38:50
 categories: [Linux, Erlang]
-keywords:   [Erlang, Debian]
+tags:       [Erlang, Debian]
 ---
 
 要在Debian上安装Erlang-OTP现在变得十分简单了，可以直接下载deb包安装，也可以通过源来安装。

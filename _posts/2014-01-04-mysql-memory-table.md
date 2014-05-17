@@ -3,7 +3,7 @@ layout:     post
 title:      "MySQL 内存表"
 date:       2014-01-04 19:10:25
 categories: [Linux, Database]
-keywords:   [Linux, MySQL]
+tags:       [Linux, MySQL]
 ---
 
 MySQL数据库我在很多地方都是用过，最早是在安装 wordpress 时接触到的，是一个很棒的开源数据库。但是之前一直只是使用，没有深入研究过。今天，看到一篇关于内存表的文章，突然有了兴趣。仔细研究一下，发现网上的文章写的都不太具体。也许是我自己理解能力不足吧！还是自己记录一下，以便将来查看吧！

@@ -3,7 +3,7 @@ layout:     post
 title:      "《架构之美》读后感之双城记"
 date:       2013-12-08 22:28:39
 categories: [Design, Book Review]
-keywords:   [Design]
+tags:       [Design]
 ---
 
 最近，我在读《架构之美》，书中的内容让我感触良多。其中一篇是关于“混乱大都市”和“设计之城”的对比，双城记的故事让我很有共鸣。

@@ -3,7 +3,7 @@ layout:     post
 title:      "REST API 学习笔记"
 date:       2013-12-10 22:37:52
 categories: [Design, Book Review]
-keywords:   [REST]
+tags:       [REST]
 ---
 
 最早接触REST接口是在CDMI，不过那时只是对REST有一个初步的认识。最近，偶然读到一篇[《最佳实践：更好的设计你的 REST API》](http://www.ibm.com/developerworks/cn/web/1103_chenyan_restapi/)，对其有了比较深入的理解力。

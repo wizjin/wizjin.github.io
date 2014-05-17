@@ -3,7 +3,7 @@ layout:     post
 title:      "NPAPI 中线程异步调用"
 date:       2013-11-26 11:47:42
 categories: [Windows, C/C++]
-keywords:   [NPAPI]
+tags:       [NPAPI]
 ---
 
 NPAPI中有些API只能在主线程中调用，例如Windowless的NPN_InvalidateRect函数之类的。如果想在后台线程中刷新页面显示就需要异步调用了。在NPAPI中可以使用NPN_PluginThreadAsyncCall函数来实现。

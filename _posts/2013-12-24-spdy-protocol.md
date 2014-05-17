@@ -3,7 +3,7 @@ layout:     post
 title:      "有趣的协议——SPDY"
 date:       2013-12-24 11:06:00
 categories: [Design, Book Review]
-keywords:   [SDPY]
+tags:       [SDPY]
 ---
 
 今天看见一个有趣的协议 —— SPDY。这是 Google 开发的基于传输控制协议（TCP）的应用层协议。Google 最早是在 Chromium 中提出的 SPDY 协议。具体可以参见[这里](http://www.chromium.org/spdy)。

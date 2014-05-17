@@ -3,7 +3,7 @@ layout:     post
 title:      "NPAPI 中添加 Javascript 函数"
 date:       2013-11-21 10:20:23
 categories: [Windows, C/C++]
-keywords:   [NPAPI, Scriptable]
+tags:       [NPAPI, Scriptable]
 ---
 
 NPAPI中，如果一个插件需要向Javascript开放接口函数，那么其实是一件比较复杂的工作。因为其实是需要通过返回一个脚本对象来实现。

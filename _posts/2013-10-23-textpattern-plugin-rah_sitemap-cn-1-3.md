@@ -3,7 +3,7 @@ layout:     post
 title:      "Rah_sitemap 1.3汉化版"
 date:       2013-10-23 14:18:28
 categories: [Textpattern, PHP]
-keywords:   [Textpattern, Plugins, Sitemap]
+tags:       [Textpattern, Plugins, Sitemap]
 ---
 
 自己做了一个Rah_sitemap 1.3.0汉化版。

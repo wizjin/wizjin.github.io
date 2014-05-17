@@ -3,7 +3,7 @@ layout:     post
 title:      "Mac OSX 下安装 RAR 解压工具"
 date:       2013-10-28 10:54:14
 categories: [Max OSX]
-keywords:   [Mavericks, rar]
+tags:       [Mavericks, rar]
 ---
 
 Mac OSX下没有找到RAR的解压工具，这让在遇到RAR文件时候如何是好啊！那就找一个装上吧！:)

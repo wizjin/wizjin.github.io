@@ -3,7 +3,7 @@ layout:     post
 title:      "Java 日志管理最佳实践-读后感"
 date:       2013-11-29 11:07:39
 categories: [Java, Book Review]
-keywords:   [Java]
+tags:       [Java]
 ---
 
 今天读了一篇[Java 日志管理最佳实践](http://www.ibm.com/developerworks/cn/java/j-lo-practicelog/index.html)深受启发，原先很多都只是模糊不清，停留在实践上的概念也豁然开朗了。

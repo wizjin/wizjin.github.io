@@ -3,7 +3,7 @@ layout:     post
 title:      "Sublime Text 3 安装配置"
 date:       2013-12-04 21:46:23
 categories: [Editor]
-keywords:   [Sublime]
+tags:       [Sublime]
 ---
 
 最近在Windows下面想找一款轻量级的编辑器，发现[Sublime Text 3](http://www.sublimetext.com/3)不错，就装了试试看。

@@ -3,7 +3,7 @@ layout:     post
 title:      "VIM 配置文件"
 date:       2013-10-22 11:51:17
 categories: [Editor]
-keywords:   [Vim, Configure]
+tags:       [Vim, Configure]
 ---
 
 俗话说“工欲善其事，必先利其器”。VIM的默认配置用着有些不太顺手，于是在网上找到[这篇不错的VIM配置](http://amix.dk/vim/vimrc.html)作为参考，自己动手丰衣足食。

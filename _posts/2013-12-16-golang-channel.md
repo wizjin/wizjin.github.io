@@ -3,7 +3,7 @@ layout:     post
 title:      "Golang 中的 Channel"
 date:       2013-12-16 22:12:17
 categories: [Golang]
-keywords:   [Golang]
+tags:       [Golang]
 ---
 
 在Golang中有一个神奇的Channel，携程间的同步主要可以依靠它来实现。不过其中有几个使用中的问题需要注意，有无缓冲，channel超时等。

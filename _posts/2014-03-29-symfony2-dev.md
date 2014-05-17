@@ -3,7 +3,7 @@ layout:     post
 title:      "Symfony2 开发环境建立"
 date:       2014-03-29 16:03:16
 categories: [PHP, Mac OSX]
-keywords:   [Symfony2]
+tags:       [Symfony2]
 ---
 
 [Symfony2](http://symfony.com) 是我最近才了解到的一个 PHP 框架，看着十分的不错。

@@ -3,7 +3,7 @@ layout:     post
 title:      "Android 多种屏幕分辨率支持"
 date:       2013-11-08 10:12:07
 categories: [Android]
-keywords:   [Android, Multiple screens]
+tags:       [Android, Multiple screens]
 ---
 
 Android下支持多种屏幕分辨率支持。

@@ -3,7 +3,7 @@ layout:     post
 title:      "安装配置 Golang"
 date:       2013-11-24 09:15:57
 categories: [Linux, Golang]
-keywords:   [Golang]
+tags:       [Golang]
 ---
 
 Golang听说很牛叉，最近事情不多，正好来学习一下。Go语言的安装十分简单。

@@ -3,7 +3,7 @@ layout:     post
 title:      "生成 Github 用的 SSH 密钥"
 date:       2013-11-22 11:44:50
 categories: [Mac OSX, Project]
-keywords:   [Mavericks]
+tags:       [Mavericks]
 ---
 
 要向Github提交代码，首先需要生成Github用的SSH密钥。Mac下面可以使用ssh-gen来完成。

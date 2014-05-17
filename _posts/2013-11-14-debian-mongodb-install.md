@@ -3,7 +3,7 @@ layout:     post
 title:      "Debian 上安装 MongoDB"
 date:       2013-11-14 10:51:51
 categories: [Linux, Database]
-keywords:   [Mongodb]
+tags:       [Mongodb]
 ---
 
 MongoDB著名的NoSQL数据库，由C++开发，基于文档模式的数据库。最新的版本有支持Debian的APT，所以安装起来十分的方便。

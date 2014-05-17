@@ -3,7 +3,7 @@ layout:     post
 title:      "制作 Mac OSX Mavericks 安装盘"
 date:       2013-10-27 11:16:17
 categories: [Max OSX]
-keywords:   [Mavericks]
+tags:       [Mavericks]
 ---
 
 前几天，苹果新的操作系统Mac OSX Mavericks已经发布了，而且这次是免费的。我还是选择了全新安装，不过要制作一个安装盘先。我找了一个8G的U盘来制作。

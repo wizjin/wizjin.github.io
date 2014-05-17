@@ -3,7 +3,7 @@ layout:     post
 title:      "Linux 使用 screen 管理远程会话"
 date:       2013-12-23 10:46:54
 categories: [Linux]
-keywords:   [Linux, Screen]
+tags:       [Linux, Screen]
 ---
 
 有时候需要远程登录到liunx服务器，当要运行一些耗时的任务时候就会变得麻烦。因为一旦退出登录，运行的程序就会被杀掉。万一网络不好SSH或者Telnet断了就更加悲剧了。幸好linux下面有screen命令可以解决这个问题。:)

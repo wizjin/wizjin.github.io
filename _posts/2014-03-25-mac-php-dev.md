@@ -3,7 +3,7 @@ layout:     post
 title:      "Mac 下搭建 PHP 开发环境"
 date:       2014-03-25 10:57:05
 categories: [Mac OSX]
-keywords:   [Mac OSX, PHP]
+tags:       [Mac OSX, PHP]
 ---
 
 最近要在Mac下面开发PHP项目，需要搭建 PHP 开发环境（Mac OSX+Nginx+MySQL+PHP）。

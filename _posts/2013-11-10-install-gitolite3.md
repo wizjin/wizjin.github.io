@@ -3,7 +3,7 @@ layout:     post
 title:      "安装配置 Gitolite 3"
 date:       2013-11-10 17:33:15
 categories: [Linux, Project]
-keywords:   [Linux, Gitolite]
+tags:       [Linux, Gitolite]
 ---
 
 想在VPS上装个git的server，发现Gitolite3不错，我把在Debian上的安装配置过程记录入下。

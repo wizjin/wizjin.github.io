@@ -3,7 +3,7 @@ layout:     post
 title:      "Github 使用 Pull requests 贡献代码"
 date:       2013-12-03 11:22:42
 categories: [Project]
-keywords:   [Github]
+tags:       [Github]
 ---
 
 我一直通过阅读、学习和使用开源代码来提高自己的水平，总想着也要向社区贡献些力量。但是自己觉得水平有些烂，总不好意思提交代码。不过今天兴致所至，算是第一次在Github上，利用Pull requests贡献了自己的力量。

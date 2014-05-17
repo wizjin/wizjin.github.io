@@ -3,7 +3,7 @@ layout:     post
 title:      "Node.js 连接 MySQL 数据库"
 date:       2013-11-27 15:05:01
 categories: [Linux, Javascript]
-keywords:   [Node.js, MySQL]
+tags:       [Node.js, MySQL]
 ---
 
 Node.js研究了一些时间，想写一些复杂的功能，数据库总是需要的。查找了一下，发现比较著名的就是[felixge/node-mysql](https://github.com/felixge/node-mysql)。

@@ -3,7 +3,7 @@ layout:     post
 title:      "Node.js 安装"
 date:       2013-11-13 16:05:17
 categories: [Linux, Javascript]
-keywords:   [Node.js]
+tags:       [Node.js]
 ---
 
 Node.js是一个基于V8引擎，在服务器端运行Javascript的平台。其特点是单线程，异步回调，号称特别适合高I/O低CPU占用的应用。挺感兴趣的，在Linux下面装一个试试。

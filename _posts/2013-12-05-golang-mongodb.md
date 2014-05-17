@@ -3,7 +3,7 @@ layout:     post
 title:      "Golang 使用 MongoDB"
 date:       2013-12-05 20:58:01
 categories: [Golang, Database]
-keywords:   [MongoDB]
+tags:       [MongoDB]
 ---
 
 Golang中MongoDB的驱动实现的不少，不过其中比较著名的是mgo，安装使用都比较方便。

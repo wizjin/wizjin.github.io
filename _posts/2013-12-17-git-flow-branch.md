@@ -3,7 +3,7 @@ layout:     post
 title:      "Git-flow 分支管理"
 date:       2013-12-17 11:09:57
 categories: [Project, Book Review]
-keywords:   [Git]
+tags:       [Git]
 ---
 
 Git也算使用了一段时间了，也很好用。但是最近看到一篇介绍Git-flow文章后发现，我的用法太落伍了，完全没有体现出Git的精髓啊！静下心来好好学习研究一下看来是必要的。下面是我的一点心得体会。

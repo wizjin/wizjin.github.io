@@ -3,7 +3,7 @@ layout:     post
 title:      "GitHub Flavored Markdown"
 date:       2013-12-12 14:59:49
 categories: [Editor, Book Review]
-keywords:   [Github]
+tags:       [Github]
 ---
 
 Github使用的是一种称为"GitHub Flavored Markdown" (GFM)的标记语言来书写消息、Issue和评论。GFM同标准的Markdown有所不同，增加了一些额外的功能。

@@ -3,7 +3,7 @@ layout:     post
 title:      "Google 开源项目风格指南(C++)"
 date:       2013-12-11 16:42:24
 categories: [Design, Book Review]
-keywords:   [Coding Standards, C++]
+tags:       [Coding Standards, C++]
 ---
 
 重读了一下《Google开源项目风格指南》，发现又有新的收获。这篇文章对编码规范的阐述还是算比较全面的，十分值得学习一下。

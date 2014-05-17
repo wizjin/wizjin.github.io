@@ -3,7 +3,7 @@ layout:     post
 title:      "保存 Linux 程序 Crash 信息"
 date:       2013-11-09 11:55:28
 categories: [Linux, C/C++]
-keywords:   [Linux, Crash]
+tags:       [Linux, Crash]
 ---
 
 在Linux下面编写程序，遇到Crash，特别是服务程序时，将会是一件让人头疼的事。要查找问题，只能查看log，但是这常常是一个痛苦的过程。如果可以吧Crash时候的调用堆栈保存下来，这将有着莫大的帮助。

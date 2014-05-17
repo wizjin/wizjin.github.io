@@ -3,7 +3,7 @@ layout:     post
 title:      "读《软件开发沉思录》有感——对象健身操"
 date:       2013-11-11 09:58:45
 categories: [Desgin]
-keywords:   [Thoughtworks]
+tags:       [Thoughtworks]
 ---
 
 最近读到一本好书Thoughtworks Anthology，读后有感。对于其中“对象健身操”这章是由Jeff Bay所写。其中以一种我认为是近乎苛刻的规则，来要求人们练习编写一个1000行左右的小项目。

@@ -3,7 +3,7 @@ layout:     post
 title:      "字符串匹配算法笔记"
 date:       2013-12-22 09:47:01
 categories: [Design]
-keywords:   [Algorithm]
+tags:       [Algorithm]
 ---
 
 字符串的搜索匹配算法有很多，以前学过的有KMP，自己也用过一些土办法。昨天，无意间找了一下，发现原来还是有许多不同的算法的。这里做下笔记，全当是给自己一个提醒，要学的东西还有好多呢！呵呵！

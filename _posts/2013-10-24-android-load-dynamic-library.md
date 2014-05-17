@@ -3,7 +3,7 @@ layout:     post
 title:      "Android 加载动态连接库"
 date:       2013-10-24 10:21:59
 categories: [Android, C/C++]
-keywords:   [Android]
+tags:       [Android]
 ---
 
 Android加载动态连接库(.so文件)有以下两种方法<!--more-->：

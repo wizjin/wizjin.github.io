@@ -3,7 +3,7 @@ layout:     post
 title:      "UML 类图符号备忘"
 date:       2013-12-27 11:58:18
 categories: [Design]
-keywords:   [UML]
+tags:       [UML]
 ---
 
 UML类图里面的符号主要有箭头、(空心/实心)三角、(空心/实心)菱形、实线和虚线组成。

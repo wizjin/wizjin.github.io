@@ -3,7 +3,7 @@ layout:     post
 title:      "Android NDK 编译 Log4cplus 1.1.1"
 date:       2013-11-12 10:20:21
 categories: [Android, C/C++]
-keywords:   [Android NDK, log4cplus]
+tags:       [Android NDK, log4cplus]
 ---
 
 编写Android NDK的程序时候调试起来很不方便，只能依靠__android_log_print来输出Log定位问题。但是不幸的是最近发现有的手机上用logcat来保存log有问题。所以，只能寻找别的解决方案，然后就是发现了Log4cplus，而且其还带有android的编译脚本。

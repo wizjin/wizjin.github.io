@@ -3,7 +3,7 @@ layout:     post
 title:      "Windows 下使用 NPAPI 开发浏览器插件"
 date:       2013-11-19 09:43:06
 categories: [Windows, C/C++]
-keywords:   [NPAPI]
+tags:       [NPAPI]
 ---
 
 最近需要开发一个浏览器的插件。浏览器的插件在Windows下面被分为了两类，一类是利用IE内核的，其插件是ActiveX的模式；另一类是遵循NPAPI的模式。ActiveX的可以选择在VC++中利用ATL来编写，NPAPI的模式以Firefox为例，也可以通过VC++来开发。
