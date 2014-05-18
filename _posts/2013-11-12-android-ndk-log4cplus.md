@@ -23,7 +23,7 @@ set_target_properties (${log4cplus} PROPERTIES
 
 ### 2. 编译log4cplus
 
-```shell
+```bash
 $ SET ANDROID_NDK=C:\absolute\path\to\the\android-ndk
 $ mkdir build && cd build
 $ cmake.exe -G"MinGW Makefiles"

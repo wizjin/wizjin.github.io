@@ -13,7 +13,7 @@ Node.js研究了一些时间，想写一些复杂的功能，数据库总是需�
 
 使用如下命令安装:
 
-```shell
+```bash
 $ npm install felixge/node-mysql
 ```
 

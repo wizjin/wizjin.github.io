@@ -17,7 +17,7 @@ Golang的环境可以从源代码编译，也可以直接安装预编译好的�
 
 将安装包解压到目录 `/usr/local/go`，然后在环境变量中导出该地址。
 
-```shell
+```bash
 $ export PATH=$PATH:/usr/local/go/bin
 ```
 
@@ -73,7 +73,7 @@ src/
 
 - 需要安装Bazaar，在Debian下面可以使用如下命令:
 
-```shell
+```bash
 $ apt-get install bzr
 ```
 
@@ -91,13 +91,13 @@ syntax on
 
 - 安装gocode，使用如下命令:
 
-```shell
+```bash
 $ go get -u github.com/nsf/gocode
 ```
 
 - 运行安装gocode的脚本。
 
-```shell
+```bash
 $ github.com/nsf/gocode/vim/update.sh
 ```
 

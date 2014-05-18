@@ -17,7 +17,7 @@ tags:       [Mavericks]
 - 插入U盘，启动终端。
 - 在“终端”中运行下面的命令
 
-```shell
+```bash
 $ sudo /Applications/Install\ OS\ X\ Mavericks.app/Contents/Resources/createinstallmedia --volume /Volumes/untitled --applicationpath /Applications/Install\ OS\ X\ Mavericks.app --nointeraction
 ```
 
@@ -25,7 +25,7 @@ $ sudo /Applications/Install\ OS\ X\ Mavericks.app/Contents/Resources/createinst
 
 - 等待安装盘制作完成
 
-```shell
+```bash
 Erasing Disk: 0%… 10%… 20%… 30%…100%… 
 >Copying installer files to disk… 
 Copy complete. 

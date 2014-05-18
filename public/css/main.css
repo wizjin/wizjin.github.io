@@ -243,6 +243,34 @@ a:visited { color: #205caa; }
 .post-content ul,
 .post-content ol { padding-left: 20px; }
 
+.post-content table { padding: 0; }
+.post-content table tr {
+  border-top: 1px solid #cccccc;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+.post-content table tr:nth-child(2n) { background-color: #f8f8f8; }
+.post-content table tr th {
+  font-weight: bold;
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+.post-content table tr td {
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+.post-content table tr th :first-child, .post-content table tr td :first-child {
+  margin-top: 0;
+}
+.post-content table tr th :last-child, .post-content table tr td :last-child {
+  margin-bottom: 0;
+}
+
 .post pre,
 .post code {
   border: 1px solid #e3e3e3;

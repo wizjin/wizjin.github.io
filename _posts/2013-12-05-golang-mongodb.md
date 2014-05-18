@@ -13,19 +13,19 @@ Golang中MongoDB的驱动实现的不少，不过其中比较著名的是mgo，�
 
 安装的命令只需要一条就可以了，十分的简单，具体的可以参考["Mgo主页":http://labix.org/mgo]。
 
-```shell
+```bash
 $ go get labix.org/v2/mgo
 ```
 
 在安装之前需要先安装[Bazaar](http://bazaar.canonical.com)。这里在Mac  OSX上安装的时候有一个小坑，那就是 `/usr/local/bin/bzr` 文件需要修改第一行。
 
-```shell
+```bash
 #!/usr/bin/python
 ```
 
 修改为:
 
-```shell
+```bash
 #!/usr/bin/python2.6
 ```
 

@@ -13,7 +13,7 @@ MongoDB著名的NoSQL数据库，由C++开发，基于文档模式的数据库�
 
 使用如下命令添加MongoDB public GPG Key
 
-```shell
+```bash
 $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
 ```
 
@@ -21,19 +21,19 @@ $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
 
 创建一个/etc/apt/sources.list.d/mongodb.list文件
 
-```shell
+```bash
 $ echo 'deb http://downloads-distro.mongodb.org/repo/debian-sysvinit dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
 ```
 
 ### 3. 更新Debian包数据库
 
-```shell
+```bash
 $ sudo apt-get update
 ```
 
 ### 4. 安装MongoDB
 
-```shell
+```bash
 $ sudo apt-get install mongodb-10gen
 ```
 
@@ -45,19 +45,19 @@ MongoDB的数据库文件存放在 @/var/lib/mongo@目录下面，log存放在 @
 
 - 启动MongoDB
 
-```shell
+```bash
 $ sudo /etc/init.d/mongodb start
 ```
 
 - 停止MongoDB
 
-```shell
+```bash
 $ sudo /etc/init.d/mongodb stop
 ```
 
 - 重启MongoDB
 
-```shell
+```bash
 $ sudo /etc/init.d/mongodb restart
 ```
 
@@ -65,7 +65,7 @@ $ sudo /etc/init.d/mongodb restart
 
 首先先要建立一个用户，MongoDB默认是任何人都可以访问的。
 
-```shell
+```bash
 $ mongo
 > use admin
 switched to db admin

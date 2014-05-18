@@ -10,7 +10,7 @@ layout: default
   </header>
 
   <article class="post-content">
-  {{ content }}
+  {{ content | replace:'&lt;!--more--&gt;', '' }}
   </article>
 
 </div>

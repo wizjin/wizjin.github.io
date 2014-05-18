@@ -11,7 +11,7 @@ tags:       [Linux, Screen]
 
 ### 1. 直接使用 Screen
 
-```shell
+```bash
 $ screen
 ```
 
@@ -19,7 +19,7 @@ $ screen
 
 ### 2. Screen+ 执行的命令
 
-``shell
+```bash
 $ screen vim readme
 ```
 

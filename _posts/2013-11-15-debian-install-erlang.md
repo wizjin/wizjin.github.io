@@ -24,14 +24,14 @@ deb http://packages.erlang-solutions.com/debian squeeze contrib
 
 - 添加erlang-solutions的key
 
-```shell
+```bash
 $ wget http://packages.erlang-solutions.com/debian/erlang_solutions.asc
 $ sudo apt-key add erlang_solutions.asc
 ```
 
 - 安装Erlang
 
-```shell
+```bash
 $ sudo apt-get update
 $ sudo apt-get install erlang
 ```
@@ -40,12 +40,12 @@ $ sudo apt-get install erlang
 
 如果需要安装HiPE，则使用下面的命令:
 
-```shell
+```bash
 $ sudo apt-get install erlang-base-hipe
 ```
 
 如果要还原成不带HiPE，则使用下面的命令:
 
-```shell
+```bash
 $ sudo apt-get install erlang-base
 ```

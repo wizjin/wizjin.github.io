@@ -38,19 +38,19 @@ composer.phar
 
 - 初始化 Git 库
 
-```shell
+```bash
 $ git init
 ```
 
 - 添加代码
 
-```shell
+```bash
 $ git init
 ```
 
 - 提交代码
 
-```shell
+```bash
 $ git commit -m "Initial commit"
 ```
 
@@ -58,19 +58,19 @@ $ git commit -m "Initial commit"
 
 - 通过下列命令安装Composer
 
-```shell
+```bash
 $ curl -s https://getcomposer.org/installer | php
 ```
 
 - 通过Composer安装vendors
 
-```shell
+```bash
 $ php composer.phar install
 ```
 
 - 测试Symfony2
 
-```shell
+```bash
 $ php app/check.php
 ```
 
@@ -78,7 +78,7 @@ $ php app/check.php
 
 通过下面的命令就可以运行 Symfony2，不需要 Web server 支持
 
-```shell
+```bash
 $ php app/console server:run
 ```
 

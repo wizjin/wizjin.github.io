@@ -22,7 +22,7 @@ tags:       [Linux, Tools]
 
 在 Debian 下面已经有相关的 package 了，所以一条指令安装完毕:
 
-```shell
+```bash
 $ apt-get install daemontools-run
 ```
 
@@ -36,7 +36,7 @@ $ apt-get install daemontools-run
 其次，在文件夹下面添加一个名为 `run` 的脚本文件，用来启动需要服务化的程序。
 例如，要启用 `/root/test` 这个程序，内容可以如下:
 
-```shell
+```sh
 #!/bin/sh
 cd /root && /root/test
 ```
@@ -47,13 +47,13 @@ PS: 其实 Daemontools，并不关心这个 `run` 是什么，只要是可以执
 
 把刚才的程序变成服务，执行下面的命令:
 
-```shell
+```bash
 $ update-service --add /srv/test
 ```
 
 要删除的话可以这样:
 
-```shell
+```bash
 $ update-service --remove /srv/test
 ```
 
@@ -63,19 +63,19 @@ $ update-service --remove /srv/test
 
 查询状态
 
-```shell
+```bash
 $ svstat /srv/test
 ```
 
 启动服务
 
-```shell
+```bash
 $ svc -u /srv/test
 ```
 
 启动服务
 
-```shell
+```bash
 $ svc -u /srv/test
 ```
 

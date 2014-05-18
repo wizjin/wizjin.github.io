@@ -13,7 +13,7 @@ tags:       [Mac OSX, Windows]
 
 首先，在Mac下面禁止生成系统文件（.Spotlight-V100，.fseventsd，.Trashes之类的），方法如下:
 
-```shell
+```bash
 $ mdutil -i off /Volumes/MyHD
 $ cd /Volumes/MyHD
 $ rm -rf .{,_.}{fseventsd,Spotlight-V*,Trashes}
@@ -25,7 +25,7 @@ $ touch .fseventsd/no_log .metadata_never_index .Trashes
 
 然后，是把 Windows 下面的系统文件夹删掉，创建空文件，然后隐藏：
 
-```shell
+```bash
 $ rm -rf System\ Volume\ Information
 $ touch System\ Volume\ Information
 $ chflags hidden System\ Volume\ Information
@@ -35,7 +35,7 @@ $ chflags hidden RECYCLER
 
 最后，禁止生成 `.DS_Store` 文件：
 
-```shell
+```bash
 $ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 ```
 
@@ -45,7 +45,7 @@ $ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
 Mac 的文件在 Windows 下面是可见的，所以只需要把这些文件全部隐藏就好了:
 
-```shell
+```bash
 C:\> ATTRIB +S +R +H .fseventsd
 C:\> ATTRIB +S +R +H .metadata_never_index
 C:\> ATTRIB +S +R +H .Trashes

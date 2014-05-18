@@ -12,7 +12,7 @@ sitemap: 'yes'
       <li class="post-item">
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <article class="post-content">{{ post.content | split:'<!--more-->' |first }}<br />
+        <article class="post-content">{{ post.content | split:'&lt;!--more--&gt;' | first }}<br />
         <a class="post-more" rel="bookmark" href="{{ post.url | prepend: site.baseurl }}">查看全文»</a>
         </article>
       </li>

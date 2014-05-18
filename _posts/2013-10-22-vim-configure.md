@@ -11,7 +11,7 @@ tags:       [Vim, Configure]
 
 ### 通用配置:
 
-```
+```vim
 set nocompatible " 设置非兼容模式，可以利用VIM独有特性
 set history=100 " 设置记录的历史行数
 filetype plugin on "  启用文件类型
@@ -21,7 +21,7 @@ set autoread " 文件被别的程序修改后自动更新
 
 ### UI配置:
 
-```
+```vim
 set ruler " 显示光标位置
 set cmdheight=2 " 命令条高为2行
 set hidden
@@ -45,7 +45,7 @@ set t_vb=
 
 ### 颜色和字体
 
-```
+```vim
 syntax enable	" 启用语法着色功能
 colorscheme zellner
 set background=dark
@@ -55,7 +55,7 @@ set fileformats=unix,dos,mac
 
 ### 文件备份
 
-```
+```vim
 " 关闭文件备份功能
 set nobackup
 set nowritebackup
@@ -64,7 +64,7 @@ set noswapfile
 
 ### 缩进和Tab字符
 
-```
+```vim
 set shiftwidth=4
 set tabstop=4
 set smarttab
@@ -77,7 +77,7 @@ set wrap
 
 ### 多页显示
 
-```
+```vim
 set tabpagemax=10
 set showtabline=2
 map <F9> :tabprevious<cr>

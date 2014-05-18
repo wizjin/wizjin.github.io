@@ -31,49 +31,49 @@ Git-flow 可以安装一个 Git 扩展，之后只要使用 `git flow` 就可以
 
 #### 从当前分支创建 develop 分支，并切换当前分支到 develop
 
-```shell
+```bash
 $ git checkout -b develop
 ```
 
 #### 从指定的 develop 创建 feature-x 分支，并切换当前分支到 feature-x
 
-```shell
+```bash
 $ git checkout -b feature-x develop
 ```
 
 #### 切换当前分支到 develop
 
-```shell
+```bash
 $ git checkout develop
 ```
 
 #### 将 feature-x 分支合并到当前分支，这里的 @--no-ff@ 作用是防止 *快进式合并(fast-farward merge)* 。这样可以保证版本演进的清晰。
 
-```shell
+```bash
 $ git merge --no-ff feature-x
 ```
 
 #### 删除 feature-x 分支
 
-```shell
+```bash
 $ git branch -d feature-x
 ```
 
 #### 在当前分支添加内容为 `0.1` 的 `tag`
 
-```shell
+```bash
 $ git tag -a 0.1
 ```
 
 #### 提交指定 `tag` 到 remote 库
 
-```shell
+```bash
 $ git push origin [tagname]
 ```
 
 #### 提交所有 `tag` 到 remote 库
 
-```shell
+```bash
 $ git push --tags
 ```
 
@@ -81,18 +81,18 @@ $ git push --tags
 
 #### 在Github上创建新分支
 
-```shell
+```bash
 $ git push origin <name_of_your_new_branch>
 ```
 
 #### 向 Github 上指定分支提交更改
 
-```shell
+```bash
 $ git push origin <name_of_your_remote>
 ```
 
 #### 删除Github上的一个分支
 
-```shell
+```bash
 $ git push origin :<name_of_your_new_branch>
 ```

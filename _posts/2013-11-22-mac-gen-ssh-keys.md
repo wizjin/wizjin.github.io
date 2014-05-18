@@ -11,7 +11,7 @@ tags:       [Mavericks]
 
 ### 1. 检查SSH是否存在
 
-```shell
+```bash
 $ cd ~/.ssh
 $ ls
 # Lists the files in your .ssh directory
@@ -19,25 +19,25 @@ $ ls
 
 ### 2. 生成SSH密钥
 
-```shell
+```bash
 $ ssh-keygen -t rsa -C "your_email@example.com"
 ```
 
 ### 3. 复制SSH密钥，并在Github上添加
 
-```shell
+```bash
 $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
 ### 4. 检查SSG密钥是否生效
 
-```shell
+```bash
 $ ssh -T git@github.com
 ```
 
 如果成功，会看见如下提示：
 
-```shell
+```bash
 Hi username! You've successfully authenticated, but GitHub does not
 # provide shell access.
 ```

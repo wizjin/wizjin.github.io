@@ -14,7 +14,7 @@ tags:       [Mac OSX, PHP]
 
 在 Terminal 中利用下面的命令来安装:
 
-```shell
+```bash
 $ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 ```
 
@@ -22,13 +22,13 @@ $ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 
 安装 Nginx 可以使用如下命令:
 
-```shell
+```bash
 $ brew install nginx
 ```
 
 其他常用命令如下:
 
-```shell
+```bash
 #打开 nginx
 $ sudo nginx
 #重新加载配置|重启|停止|退出 nginx
@@ -39,14 +39,14 @@ Nginx 配置文件位于 `/usr/local/etc/nginx/` 下面
 
 设置 nginx 开机启动
 
-```shell
+```bash
 $ sudo cp /usr/local/opt/nginx/*.plist /Library/LaunchDaemons/
 $ sudo chown root:wheel /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
 ```
 
 手工启动 nginx
 
-```shell
+```bash
 $ sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
 ```
 
@@ -54,7 +54,7 @@ $ sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
 
 安装 PHP，使用 PHP-FPM，这里不要安装 Apache
 
-```shell
+```bash
 $ brew tap homebrew/dupes
 $ brew tap josegonzalez/homebrew-php
 $ brew install --without-apache --with-fpm --with-mysql php55
@@ -62,42 +62,42 @@ $ brew install --without-apache --with-fpm --with-mysql php55
 
 安装命令行的 PHP
 
-```shell
+```bash
 $ echo 'export PATH="$(brew --prefix josegonzalez/php/php55)/bin:$PATH"' >> ~/.bash_profile
 ```
 
 设置 PHP-FPM 开机启动
 
-```shell
+```bash
 $ mkdir -p ~/Library/LaunchAgents
 $ cp /usr/local/Cellar/php55/5.5.9/homebrew-php.josegonzalez.php55.plist ~/Library/LaunchAgents/
 ```
 
 手工启动 PHP-FPM
 
-```shell
+```bash
 $ launchctl load -w ~/Library/LaunchAgents/homebrew-php.josegonzalez.php55.plist 
 ```
 
 查看 PHP-FPM 是否已经启动了
 
-```shell
+```bash
 $ lsof -Pni4 | grep LISTEN | grep php
 ```
 
 配置文件位置:
 
-```shell
+```bash
 $ /usr/local/etc/php/5.5/php.ini
 ```
 
 安装 PHP 插件
 
-```shell
+```bash
 $ brew install php55-apcu
 ```
 
-```shell
+```bash
 $ brew install icu4c
 $ sudo pecl update-channels
 $ sudo pecl install intl
@@ -109,25 +109,25 @@ MySQL 官方有 Mac 版本的，可以从[这里](http://dev.mysql.com/downloads
 
 安装 MySQL
 
-```shell
+```bash
 $ brew install mysql
 ```
 
 设置 MySQL 开机启动
 
-```shell
+```bash
 $ cp /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
 ```
 
 手工启动 MySQL
 
-```shell
+```bash
 $ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 ```
 
 设置 MySQL
 
-```shell
+```bash
 $ mysql_secure_installation
 ```
 
@@ -135,7 +135,7 @@ $ mysql_secure_installation
 
 添加配置
 
-```shell
+```bash
 $ curl -L https://gist.github.com/frdmn/7853158/raw/bash_aliases -o /tmp/.bash_aliases
 $ cat /tmp/.bash_aliases >> ~/.bash_aliases
 $ echo "source ~/.bash_aliases" >> ~/.bash_profile
@@ -144,7 +144,7 @@ $ source ~/.bash_profile
 
 控制服务器
 
-```shell
+```bash
 # Nginx
 $ nginx.start
 # nginx.stop

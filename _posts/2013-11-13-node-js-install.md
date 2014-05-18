@@ -11,7 +11,7 @@ Node.js是一个基于V8引擎，在服务器端运行Javascript的平台。其�
 
 安装的命令如下：
 
-```shell
+```bash
 $ sudo apt-get install python g++ make checkinstall
 $ mkdir ~/src && cd $_
 $ wget -N http://nodejs.org/dist/node-latest.tar.gz
