@@ -187,22 +187,31 @@ a:visited { color: #205caa; }
 .post-header { margin: 10px 0 30px; }
 
 .post-header h1 {
-  font-size: 42px;
-  letter-spacing: -1.75px;
+  font-size: 24px;
+  letter-spacing: -1px;
   line-height: 1;
   font-weight: 300;
+  color: #333;
 }
 
 .post-header .meta {
   font-size: 15px;
   color: #818181;
-  margin-top: 5px;
+  margin: 1em 0;
 }
 
-.post-content { margin: 0 0 30px; }
+.post-content {
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  margin: 0 0 30px;
+}
 
 .post-content > * { margin: 20px 0; color: #333; }
-
+.post-content > *:first-child { margin-top: 0 !important; }
+.post-content > *:last-child { margin-bottom: 0 !important; }
 
 .post-content h1,
 .post-content h2,
@@ -213,21 +222,29 @@ a:visited { color: #205caa; }
   line-height: 1;
   font-weight: 300;
   margin: 40px 0 20px;
+  font-weight: bold;
 }
 
 .post-content h2 {
-  font-size: 32px;
+  font-size: 24px;
   letter-spacing: -1.25px;
 }
 
 .post-content h3 {
-  font-size: 26px;
+  font-size: 18px;
   letter-spacing: -1px;
 }
 
 .post-content h4 {
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: -1px;
+}
+
+.post-content h5 { font-size: 14px; }
+
+.post-content h6 {
+  color: #777777;
+  font-size: 14px;
 }
 
 .post-content blockquote {
@@ -279,7 +296,12 @@ a:visited { color: #205caa; }
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  font-size: 15px;
+  font-size: 13px;
+}
+
+.post pre {
+  display: block;
+  overflow: auto;
 }
 
 .post code { padding: 1px 5px; }
@@ -287,7 +309,7 @@ a:visited { color: #205caa; }
 .post ul,
 .post ol { margin-left: 1.35em; }
 
-.post pre code { border: none; padding-left: 0; }
+.post pre code { background-color: transparent; border: none; padding-left: 0; }
 
 /* terminal */
 .post pre.terminal {
@@ -300,6 +322,20 @@ a:visited { color: #205caa; }
 }
 
 .post pre.terminal code { background-color: #333; }
+
+
+/* Post comment styles */
+/* ----------------------------------------------------------*/
+
+#disqus_container {
+  padding-top: 24px;
+}
+
+#disqus_container .comment {
+  font-size: 14px;
+  color: #818181;
+}
+
 
 /* Syntax highlighting styles */
 /* ----------------------------------------------------------*/
