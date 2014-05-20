@@ -1,0 +1,1 @@
+{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.categories %} • {{ post.categories | join: ', ' }}{% endif %}{% if post.tags %} • {{ post.tags | join: ', ' }}{% endif %}
