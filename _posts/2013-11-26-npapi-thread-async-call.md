@@ -6,18 +6,18 @@ categories: [Windows, C/C++]
 tags:       [NPAPI]
 ---
 
-NPAPI中有些API只能在主线程中调用，例如Windowless的NPN_InvalidateRect函数之类的。如果想在后台线程中刷新页面显示就需要异步调用了。在NPAPI中可以使用NPN_PluginThreadAsyncCall函数来实现。
+NPAPI 中有些 API 只能在主线程中调用，例如 Windowless 的 NPN_InvalidateRect 函数之类的。如果想在后台线程中刷新页面显示就需要异步调用了。在 NPAPI 中可以使用 NPN_PluginThreadAsyncCall 函数来实现。
 <!--more-->
 
 ### 1. 注册函数
 
-在np_entry.cpp的NP_Initialize函数中添加如下代码，来实现注册：
+在 np_entry.cpp 的 NP_Initialize 函数中添加如下代码，来实现注册：
 
 ```cpp
 NPNFuncs.pluginthreadasynccall = pFuncs->pluginthreadasynccall;
 ```
 
-在npn_gate.cpp文件中添加实现代码：
+在 npn_gate.cpp 文件中添加实现代码：
 
 ```cpp
 void NPN_PluginThreadAsyncCall(NPP plugin, void (*func)(void *), void *userData)
@@ -26,6 +26,6 @@ void NPN_PluginThreadAsyncCall(NPP plugin, void (*func)(void *), void *userData)
 }
 ```
 
-### 2. 使用NPN_PluginThreadAsyncCall
+### 2. 使用 NPN_PluginThreadAsyncCall
 
-NPN_PluginThreadAsyncCall的参数func是一个回调函数，这个函数会在随后的主进程中被调用。在这个回调函数可以编写一些需要在中线程中实现的代码。
+NPN_PluginThreadAsyncCall 的参数 func 是一个回调函数，这个函数会在随后的主进程中被调用。在这个回调函数可以编写一些需要在中线程中实现的代码。

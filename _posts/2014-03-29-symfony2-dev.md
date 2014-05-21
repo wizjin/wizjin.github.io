@@ -7,7 +7,7 @@ tags:       [Symfony2]
 ---
 
 [Symfony2](http://symfony.com) 是我最近才了解到的一个 PHP 框架，看着十分的不错。
-因为正好有一个PHP的项目，所以借机花了一些时间，在 Mac 下面搭建了一个开发环境，简单的记录了下过程。
+因为正好有一个 PHP 的项目，所以借机花了一些时间，在 Mac 下面搭建了一个开发环境，简单的记录了下过程。
 <!--more-->
 
 ### 初始化项目
@@ -62,19 +62,19 @@ $ git commit -m "Initial commit"
 $ curl -s https://getcomposer.org/installer | php
 ```
 
-- 通过Composer安装vendors
+- 通过 Composer 安装 vendors
 
 ```bash
 $ php composer.phar install
 ```
 
-- 测试Symfony2
+- 测试 Symfony2
 
 ```bash
 $ php app/check.php
 ```
 
-### 运行Symfony2
+### 运行 Symfony2
 
 通过下面的命令就可以运行 Symfony2，不需要 Web server 支持
 

@@ -6,16 +6,16 @@ categories: [Linux, Project]
 tags:       [Linux, Gitolite]
 ---
 
-想在VPS上装个git的server，发现Gitolite3不错，我把在Debian上的安装配置过程记录入下。
+想在 VPS 上装个 git 的 server，发现 Gitolite3 不错，我把在 Debian 上的安装配置过程记录入下。
 <!--more-->
 
-### 1. 安装git-core，并确保prel已经安装
+### 1. 安装 git-core，并确保 prel 已经安装
 
 ```bash
 $ apt-get install git-core
 ```
 
-### 2. 创建git用户
+### 2. 创建 git 用户
 
 ```bash
 $ addgroup --system git
@@ -29,7 +29,7 @@ $ chmod 700 /var/git
 $ ssh_keygen -f ~/.ssh/gitadmin
 ```
 
-将生成的gitadmin和gitadmin.pub复制到客户端
+将生成的 gitadmin 和 gitadmin.pub 复制到客户端
 
 ### 4. 安装gitolite
 
@@ -61,13 +61,13 @@ Host wizjin.com
 	IdentityFile ~/.ssh/gitadmin
 ```
 
-### 7. 配置gitolite
+### 7. 配置 Gitolite
 
 ```bash
 $ git clone git@wizjin.com:gitolite-admin
 ```
 
-在获取的文件夹中，keydir用来存放授权key，conf/gitolite.conf文件用来配置用户授权
+在获取的文件夹中，keydir 用来存放授权 key，conf/gitolite.conf 文件用来配置用户授权
 
 ### 8. 添加用户
 

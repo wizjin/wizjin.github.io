@@ -6,7 +6,7 @@ categories: [Android]
 tags:       [Android, Multiple screens]
 ---
 
-Android下支持多种屏幕分辨率支持。
+Android 下支持多种屏幕分辨率支持。
 <!--more-->
 
 ### 1. 常见的屏幕分辨率

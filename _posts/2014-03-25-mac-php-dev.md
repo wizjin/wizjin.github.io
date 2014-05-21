@@ -6,11 +6,11 @@ categories: [Mac OSX]
 tags:       [Mac OSX, PHP]
 ---
 
-最近要在Mac下面开发PHP项目，需要搭建 PHP 开发环境（Mac OSX+Nginx+MySQL+PHP）。
+最近要在 Mac 下面开发 PHP 项目，需要搭建 PHP 开发环境（Mac OSX+Nginx+MySQL+PHP）。
 安装的方式很多，我用的是 Brew 来安装，感觉挺方便的。
 <!--more-->
 
-### 1. 安装Brew
+### 1. 安装 Brew
 
 在 Terminal 中利用下面的命令来安装:
 
@@ -18,7 +18,7 @@ tags:       [Mac OSX, PHP]
 $ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 ```
 
-### 2. Nginx安装
+### 2. Nginx 安装
 
 安装 Nginx 可以使用如下命令:
 
@@ -50,7 +50,7 @@ $ sudo chown root:wheel /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
 $ sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
 ```
 
-### 3. PHP安装
+### 3. PHP 安装
 
 安装 PHP，使用 PHP-FPM，这里不要安装 Apache
 
@@ -103,7 +103,7 @@ $ sudo pecl update-channels
 $ sudo pecl install intl
 ```
 
-### 4. MySQL安装
+### 4. MySQL 安装
 
 MySQL 官方有 Mac 版本的，可以从[这里](http://dev.mysql.com/downloads/mysql/)下载。但是我感觉没有用 brew 安装世升级方便。
 

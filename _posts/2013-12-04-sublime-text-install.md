@@ -6,34 +6,34 @@ categories: [Editor]
 tags:       [Sublime]
 ---
 
-最近在Windows下面想找一款轻量级的编辑器，发现[Sublime Text 3](http://www.sublimetext.com/3)不错，就装了试试看。
+最近在 Windows 下面想找一款轻量级的编辑器，发现 [Sublime Text 3](http://www.sublimetext.com/3) 不错，就装了试试看。
 <!--more-->
 
-### 1. 安装Sublime Text 3
+### 1. 安装 Sublime Text 3
 
-下载Sublime Text 3对应平台的安装包，来安装。
+下载 Sublime Text 3 对应平台的安装包，来安装。
 
-### 2. 安装Package Control
+### 2. 安装 Package Control
 
-安装[Package Control](https://sublime.wbond.net/installation)，通过 __ctrl+\`__ 执行下面的代码即可。
+安装 [Package Control](https://sublime.wbond.net/installation)，通过 __ctrl+\`__ 执行下面的代码即可。
 
 ```python
 import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
 ```
 
-重启Sublime Text后Package Control就能生效了。
+重启 Sublime Text 后 Package Control 就能生效了。
 
 ### 3. 安装插件
 
 - Theme – Soda 主题
 - Alignment 等号对齐(Ctrl+Alt+A)
 - SideBarEnhancements 侧边栏增强
-- GoSublime 支持Go语言
-- Git git工具
+- GoSublime 支持 Go 语言
+- Git git 工具
 
-### 4. 支持VIM
+### 4. 支持 VIM
 
-默认Sublime Text是关闭对Vim的支持的，在setting里面去除 `"ignored_packages": ["vintage"]`，就可以支持VIM。配置文件如下:
+默认 Sublime Text 是关闭对 Vim 的支持的，在 setting 里面去除 `"ignored_packages": ["vintage"]`，就可以支持 VIM。配置文件如下:
 
 ```json
 {
@@ -47,9 +47,9 @@ import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.
 }
 ```
 
-### 4. 支持Go语言
+### 4. 支持 Go 语言
 
-安装GoSublime，然后修改其 `Settings - User` 配置文件
+安装 GoSublime，然后修改其 `Settings - User` 配置文件
 
 ```json
 {
@@ -60,4 +60,4 @@ import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.
 
 ### 5. 配置工程文件
 
-添加工程文件，并将build system选择为GoSublime。
+添加工程文件，并将 build system 选择为 GoSublime。

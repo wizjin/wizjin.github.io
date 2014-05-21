@@ -6,14 +6,14 @@ categories: [Android, C/C++]
 tags:       [Android]
 ---
 
-Android加载动态连接库(.so文件)有以下两种方法<!--more-->：
+Android 加载动态连接库(.so文件)有以下两种方法<!--more-->：
 
-- 在Java中使用System.loadLibrary函数
-- 在NDK中使用dlopen/dlsym/dlclose函数
+- 在 Java 中使用 `System.loadLibrary` 函数
+- 在 NDK 中使用 `dlopen/dlsym/dlclose` 函数
 
-### System.loadLibrary实现方式
+### System.loadLibrary 实现方式
 
-为了能在App启动进入Activity前把动态连接库加载好，一般会选择把loadLibrary放在static中，写法如下：
+为了能在 App 启动进入 Activity 前把动态连接库加载好，一般会选择把 loadLibrary 放在 static 中，写法如下：
 
 ```java 
 public class MyClass {
@@ -24,11 +24,11 @@ public class MyClass {
 };
 ```
 
-### dlopen/dlsym/dlclose实现方式
+### dlopen/dlsym/dlclose 实现方式
 
-工作原理基本上是，dlopen用来加载动态连接库，dlsym从dlopen加载的动态链接库中按函数名获取函数指针。
+工作原理基本上是，dlopen 用来加载动态连接库，dlsym 从 dlopen 加载的动态链接库中按函数名获取函数指针。
 
-例如，mylib.so中有一个add函数：
+例如，mylib.so 中有一个 add 函数：
 
 ```java
 int add(int a, int b) {
@@ -52,7 +52,7 @@ jint JNI_OnLoad(JavaVM* vm, void* reserved) {
 }
 ```
 
-这里遇到一个关键就是dlopen的第一个参数需要指明动态连接库的路径，这个路径怎么确定呢？如果知道这个路径的话直接写就可以了。当然，这里有个方法可以根据函数获得所在动态连接库路径。方法如下：
+这里遇到一个关键就是 dlopen 的第一个参数需要指明动态连接库的路径，这个路径怎么确定呢？如果知道这个路径的话直接写就可以了。当然，这里有个方法可以根据函数获得所在动态连接库路径。方法如下：
 
 ```c
 Dl_info info;

@@ -6,25 +6,25 @@ categories: [Windows, C/C++]
 tags:       [NPAPI]
 ---
 
-最近需要开发一个浏览器的插件。浏览器的插件在Windows下面被分为了两类，一类是利用IE内核的，其插件是ActiveX的模式；另一类是遵循NPAPI的模式。ActiveX的可以选择在VC++中利用ATL来编写，NPAPI的模式以Firefox为例，也可以通过VC++来开发。
+最近需要开发一个浏览器的插件。浏览器的插件在 Windows 下面被分为了两类，一类是利用 IE 内核的，其插件是 ActiveX 的模式；另一类是遵循 NPAPI 的模式。ActiveX 的可以选择在 VC++ 中利用 ATL 来编写，NPAPI 的模式以 Firefox 为例，也可以通过 VC++ 来开发。
 <!--more-->
 
-### 1. 获取NPAPI SDK
+### 1. 获取 NPAPI SDK
 
-NPAPI的SDK有两种方式获取：
+NPAPI 的 SDK 有两种方式获取：
 
-- Google code上托管的[npapi-sdk](https://code.google.com/p/npapi-sdk/)
+- Google code 上托管的[npapi-sdk](https://code.google.com/p/npapi-sdk/)
 - [firefox4.0.1源代码](http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/4.0.1/source/firefox-4.0.1.source.tar.bz2)解压后，其目录 `.\mozilla-2.0\modules\plugin` 中包含的SDK文件
 
 ### 2. 创建工程
 
-- 在Visual Studio中创建一个动态链接库Dll工程。
-- 添加SDK中的头文件和np_entry.cpp、npn_gate.cpp和npp_gate.cpp三个文件
-- 添加预编译宏_X86_
+- 在 Visual Studio 中创建一个动态链接库 Dll 工程。
+- 添加 SDK 中的头文件和 np_entry.cpp、npn_gate.cpp 和 npp_gate.cpp 三个文件
+- 添加预编译宏 _X86_
 
-### 3. 配置Dll导出函数
+### 3. 配置 Dll 导出函数
 
-添加一个def定义文件，用来确保Dll导出函数正确，内容如下：
+添加一个 def 定义文件，用来确保 Dll 导出函数正确，内容如下：
 
 ```
 LIBRARY "npdemo"
@@ -34,16 +34,16 @@ EXPORTS
 	NP_Shutdown		@3
 ```
 
-### 4. 配置VERSION资源
+### 4. 配置 VERSION 资源
 
-添加一个rc资源文件，并添加一条VERSION资源，修改StringFileInfo块
+添加一个 rc 资源文件，并添加一条 VERSION 资源，修改 StringFileInfo 块
 
-- 将其中的子BLOCK设置成 @040904e4@
-- 添加一条 `VALUE "MIMEType", "application/demo-plugin"`，NPAPI是利用MIMEType来查找插件的，所以这里的demo-plugin其实就是插件的标识。当然，如果写成常用的类型，则表示这个插件可以支持打开这种类型的资源
+- 将其中的子 BLOCK 设置成 `040904e4`
+- 添加一条 `VALUE "MIMEType", "application/demo-plugin"`，NPAPI 是利用 MIMEType 来查找插件的，所以这里的 demo-plugin 其实就是插件的标识。当然，如果写成常用的类型，则表示这个插件可以支持打开这种类型的资源
 
 ### 5. 插件实现代码
 
-向工程添加一个C++类，例如Plugin。代码如下：
+向工程添加一个 C++ 类，例如 Plugin。代码如下：
 
 ```cpp
 // Plugin.h
@@ -106,11 +106,11 @@ CPlugin::~CPlugin()
 
 ### 6. 安装插件
 
-Firefox插件通过注册表安装，在注册表 `HKEY_CURRENT_USER\SOFTWARE\MozillaPlugins` 下面，新建子项 @mozilla.com.cn/demo，并新建字符串数据"Path"设值Dll完整路径。
+Firefox 插件通过注册表安装，在注册表 `HKEY_CURRENT_USER\SOFTWARE\MozillaPlugins` 下面，新建子项 `@mozilla.com.cn/demo`，并新建字符串数据 `Path` 设值 Dll 完整路径。
 
 ### 7. 测试插件
 
-可以编写一个html测试页面来测试插件：
+可以编写一个 html 测试页面来测试插件：
 
 ```html
 <HTML>
@@ -121,4 +121,4 @@ Firefox插件通过注册表安装，在注册表 `HKEY_CURRENT_USER\SOFTWARE\Mo
 </HTML>
 ```
 
-PS. 在Firefox中利用 `about:plugins` 可以查看插件的状况。
+PS. 在 Firefox 中利用 `about:plugins` 可以查看插件的状况。

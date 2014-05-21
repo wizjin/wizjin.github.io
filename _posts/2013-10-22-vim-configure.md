@@ -86,6 +86,6 @@ map ,t :tabnew .<cr>
 ```
 
 基本上没有改动多少，主要是吧我不需要的功能删除简化之后的结果。
-虽然内容不多，但是这样一配置，VIM用起来顺手多了。:)
+虽然内容不多，但是这样一配置，VIM 用起来顺手多了。:)
 
 下载: _[VIM配置文件](https://gist.githubusercontent.com/wizjin/9424618/raw/b0537af2a2f261943a9d68d16d50ccf4b5cb5430/.vimrc)_

@@ -6,18 +6,18 @@ categories: [Golang, Database]
 tags:       [MongoDB]
 ---
 
-Golang中MongoDB的驱动实现的不少，不过其中比较著名的是mgo，安装使用都比较方便。
+Golang 中 MongoDB 的驱动实现的不少，不过其中比较著名的是 mgo，安装使用都比较方便。
 <!--more-->
 
-### 1. 安装Mgo
+### 1. 安装 Mgo
 
-安装的命令只需要一条就可以了，十分的简单，具体的可以参考["Mgo主页":http://labix.org/mgo]。
+安装的命令只需要一条就可以了，十分的简单，具体的可以参考 ["Mgo 主页":http://labix.org/mgo]。
 
 ```bash
 $ go get labix.org/v2/mgo
 ```
 
-在安装之前需要先安装[Bazaar](http://bazaar.canonical.com)。这里在Mac  OSX上安装的时候有一个小坑，那就是 `/usr/local/bin/bzr` 文件需要修改第一行。
+在安装之前需要先安装 [Bazaar](http://bazaar.canonical.com)。这里在 Mac  OSX 上安装的时候有一个小坑，那就是 `/usr/local/bin/bzr` 文件需要修改第一行。
 
 ```bash
 #!/usr/bin/python
@@ -29,11 +29,11 @@ $ go get labix.org/v2/mgo
 #!/usr/bin/python2.6
 ```
 
-不然bazaar无法正常工作。
+不然 bazaar 无法正常工作。
 
-### 2. 使用Mgo
+### 2. 使用 Mgo
 
-Mgo使用的例子如下：
+Mgo 使用的例子如下：
 
 ```go
 package main

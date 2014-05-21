@@ -6,10 +6,10 @@ categories: [Linux, Javascript]
 tags:       [Node.js, MySQL]
 ---
 
-Node.js研究了一些时间，想写一些复杂的功能，数据库总是需要的。查找了一下，发现比较著名的就是[felixge/node-mysql](https://github.com/felixge/node-mysql)。
+Node.js 研究了一些时间，想写一些复杂的功能，数据库总是需要的。查找了一下，发现比较著名的就是 [felixge/node-mysql](https://github.com/felixge/node-mysql)。
 <!--more-->
 
-### 1. 安装Node-Mysql
+### 1. 安装 Node-Mysql
 
 使用如下命令安装:
 
@@ -34,7 +34,7 @@ connection.query('SELECT 1 + 1 AS solution', function(err, rows, fields) {
 connection.end();
 ```
 
-通过connect和end来建立单个连接，这个十分方便。
+通过 connect 和 end 来建立单个连接，这个十分方便。
 
 ### 3. 使用连接池模式
 
@@ -51,4 +51,4 @@ pool.getConnection(function(err, connection) {
 });
 ```
 
-通过getConnection来从Pool中获取一个连接，使用之后再通过 connection.release来将连接返回连接池，以供将来使用。
+通过 getConnection 来从 Pool 中获取一个连接，使用之后再通过 connection.release 来将连接返回连接池，以供将来使用。

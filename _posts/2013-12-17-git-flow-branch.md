@@ -6,14 +6,14 @@ categories: [Project, Book Review]
 tags:       [Git]
 ---
 
-Git也算使用了一段时间了，也很好用。但是最近看到一篇介绍Git-flow文章后发现，我的用法太落伍了，完全没有体现出Git的精髓啊！静下心来好好学习研究一下看来是必要的。下面是我的一点心得体会。
+Git 也算使用了一段时间了，也很好用。但是最近看到一篇介绍 Git-flow 文章后发现，我的用法太落伍了，完全没有体现出 Git 的精髓啊！静下心来好好学习研究一下看来是必要的。下面是我的一点心得体会。
 <!--more-->
 
-### 1. Git-flow简介
+### 1. Git-flow 简介
 
-Git的优势之一就在于其分支/合并的低成本，利用其分支管理，可以将版本控制进化到一个极其清晰易用的地步。Git-flow源于nvie 发表的 _["A successful Git branching model"](http://nvie.com/posts/a-successful-git-branching-model/)_ 。在这篇文章中他介绍了他的Git分支管理模型，讲述了如何保持自己的Git仓库优雅并且整洁。
+Git 的优势之一就在于其分支/合并的低成本，利用其分支管理，可以将版本控制进化到一个极其清晰易用的地步。Git-flow 源于 nvie 发表的 _["A successful Git branching model"](http://nvie.com/posts/a-successful-git-branching-model/)_ 。在这篇文章中他介绍了他的 Git 分支管理模型，讲述了如何保持自己的 Git 仓库优雅并且整洁。
 
-Git-flow将分支分为以下几种：
+Git-flow 将分支分为以下几种：
 
 - master - 主干版本，随时保持可发布的正式版本。
 - develop - 开发分支，合并功能和修正，是一直存在的分支。
@@ -47,7 +47,7 @@ $ git checkout -b feature-x develop
 $ git checkout develop
 ```
 
-#### 将 feature-x 分支合并到当前分支，这里的 @--no-ff@ 作用是防止 *快进式合并(fast-farward merge)* 。这样可以保证版本演进的清晰。
+#### 将 feature-x 分支合并到当前分支，这里的 `--no-ff` 作用是防止 *快进式合并(fast-farward merge)* 。这样可以保证版本演进的清晰。
 
 ```bash
 $ git merge --no-ff feature-x
@@ -77,9 +77,9 @@ $ git push origin [tagname]
 $ git push --tags
 ```
 
-### 3. Git branch与Github
+### 3. Git branch 与 Github
 
-#### 在Github上创建新分支
+#### 在 Github 上创建新分支
 
 ```bash
 $ git push origin <name_of_your_new_branch>
@@ -91,7 +91,7 @@ $ git push origin <name_of_your_new_branch>
 $ git push origin <name_of_your_remote>
 ```
 
-#### 删除Github上的一个分支
+#### 删除 Github 上的一个分支
 
 ```bash
 $ git push origin :<name_of_your_new_branch>

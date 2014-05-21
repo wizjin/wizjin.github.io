@@ -6,30 +6,30 @@ categories: [Design, Book Review]
 tags:       [REST]
 ---
 
-最早接触REST接口是在CDMI，不过那时只是对REST有一个初步的认识。最近，偶然读到一篇[《最佳实践：更好的设计你的 REST API》](http://www.ibm.com/developerworks/cn/web/1103_chenyan_restapi/)，对其有了比较深入的理解力。
+最早接触 REST 接口是在 CDMI，不过那时只是对REST有一个初步的认识。最近，偶然读到一篇[《最佳实践：更好的设计你的 REST API》](http://www.ibm.com/developerworks/cn/web/1103_chenyan_restapi/)，对其有了比较深入的理解力。
 <!--more-->
 
-### 1. REST简介
+### 1. REST 简介
 
-REST是英文Representational State Transfer的缩写，是一种基于HTTP，URI，以及XML这些现有协议与标准的，针对网络应用的设计和开发方式。它可以降低开发的复杂度，提高系统的可伸缩性。
+REST 是英文 Representational State Transfer 的缩写，是一种基于 HTTP，URI，以及 XML 这些现有协议与标准的，针对网络应用的设计和开发方式。它可以降低开发的复杂度，提高系统的可伸缩性。
 
-### 2. 一切皆资源，URI组织资源
+### 2. 一切皆资源，URI 组织资源
 
-在REST构架的设计中，系统中的所有事物都被抽象为资源。 并且利用URI来组织资源，资源可以是一个个体，也可以是一个集合，例如：
+在REST构架的设计中，系统中的所有事物都被抽象为资源。 并且利用 URI 来组织资源，资源可以是一个个体，也可以是一个集合，例如：
 
 ```
 http://example.com/users -- 一组用户
 http://example.com/users/<user_id> -- 一个单一用户
 ```
 
-#### 一个URI指向一个资源，同一个资源可以有多个URI，例如：
+#### 一个 URI 指向一个资源，同一个资源可以有多个 URI，例如：
 
 ```
 http://example.com/users/<user_id>/<ticket>
 http://example.com/tickets/<ticket_id>
 ```
 
-#### 通过参数条件过滤，更准确地获取数据，可以通过POST参数，或者URL参数方式：
+#### 通过参数条件过滤，更准确地获取数据，可以通过 POST 参数，或者 URL 参数方式：
 
 ```
 http://example.com/users?filter=age between (15, 18)
@@ -49,9 +49,9 @@ http://example.com/users?page=5&pagesize=50
 
 #### 对于某些特殊的情况下，可以把一些操作也定义为一种资源。例如，对资源加锁、修改文件等。
 
-### 2. 使用Http的Mehod
+### 2. 使用 Http 的 Method
 
-REST API通过使用Http协议已有的Mehod
+REST API 通过使用 Http 协议已有的 Method
 
 - 使用 POST 方法在服务器上创建资源
 - 使用 GET 方法从服务器检索某个资源或者资源集合
@@ -106,13 +106,13 @@ http://example.com/users/xml
 #### 使用 HTTP 头进行缓存处理
 
 缓存控制通常是需要客户端，缓存服务器 / 代理服务器与业务服务器一起发生作用。
-HTTP 头中有“Cache-control”字段来控制如何使用缓存，常见的取值有private、no-cache、max-age、must-revalidate等。比如当你给返回的数据内容设置max-age=600，那么当用户隔了 30 秒再次请求的时候，就不会导致重新请求后台数据。
-另外，也可以通过“Expires”字段来指定内容过期时间，在此时间前的请求都不会导致后台程序重新请求数据。
+HTTP 头中有 “Cache-control” 字段来控制如何使用缓存，常见的取值有 private、no-cache、max-age、must-revalidate 等。比如当你给返回的数据内容设置 max-age=600，那么当用户隔了 30 秒再次请求的时候，就不会导致重新请求后台数据。
+另外，也可以通过 “Expires” 字段来指定内容过期时间，在此时间前的请求都不会导致后台程序重新请求数据。
 
 #### 条件请求与电子标签
 
 很多时候，数据内容可能会几个小时甚至几天都不会发生变动，这个时候根据请求时间间隔来控制缓存，就不能满足系统的需求了。通过支持条件请求与电子标签，可以帮助我们来解决这个问题。
-当用户请求数据内容时，系统在返回数据的同时，在HTTP头中，将返回根据服务器内容的最后修改时间Last-Modified，或者根据服务器内容生成电子标签ETag。 当用户再次请求数据时，就可以在HTTP请求中使用If-Modified-Since 或者If-None-Match头信息，把上次请求得到的时间戳或者电子标签传给服务器。当收到一个有条件请求的HTTP头的REST请求的时候，我们的程序需要将收到的时间戳或者电子标签与当前内容作比较，就可以很容易的知道用户请求的数据内容在这段时间是否发生过修改，并根据比较结果返回给用户最新内容，或者用HTTP响应码304告知用户，内容没有变化。
+当用户请求数据内容时，系统在返回数据的同时，在 HTTP 头中，将返回根据服务器内容的最后修改时间 Last-Modified，或者根据服务器内容生成电子标签 ETag。 当用户再次请求数据时，就可以在 HTTP 请求中使用 If-Modified-Since 或者 If-None-Match 头信息，把上次请求得到的时间戳或者电子标签传给服务器。当收到一个有条件请求的 HTTP 头的 REST 请求的时候，我们的程序需要将收到的时间戳或者电子标签与当前内容作比较，就可以很容易的知道用户请求的数据内容在这段时间是否发生过修改，并根据比较结果返回给用户最新内容，或者用 HTTP 响应码 304 告知用户，内容没有变化。
 
 #### 使用 HTTP 头进行并发处理
 

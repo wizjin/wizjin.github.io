@@ -6,7 +6,7 @@ categories: [Linux, Javascript]
 tags:       [Node.js]
 ---
 
-Node.js是一个基于V8引擎，在服务器端运行Javascript的平台。其特点是单线程，异步回调，号称特别适合高I/O低CPU占用的应用。挺感兴趣的，在Linux下面装一个试试。
+Node.js 是一个基于 V8 引擎，在服务器端运行 Javascript 的平台。其特点是单线程，异步回调，号称特别适合高 I/O 低 CPU 占用的应用。挺感兴趣的，在 Linux 下面装一个试试。
 <!--more-->
 
 安装的命令如下：

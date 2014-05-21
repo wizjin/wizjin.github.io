@@ -18,7 +18,7 @@ tags:       [Linux, Tools]
 
 然后，我选的工具就是 [Daemontools](http://cr.yp.to/daemontools/svc.html)，网上相关的文章很多，但是大多都是从源代码编译开始的。作为一个工具这样用就太麻烦了。而且我只用到了其中很小的一部分，所以研究之后直接上简单方案。
 
-### 1. 安装Daemontools
+### 1. 安装 Daemontools
 
 在 Debian 下面已经有相关的 package 了，所以一条指令安装完毕:
 
@@ -26,7 +26,7 @@ tags:       [Linux, Tools]
 $ apt-get install daemontools-run
 ```
 
-### 2. 配置Service
+### 2. 配置 Service
 
 接下去就是要把自己的程序变成一个服务了，方法如下:
 
@@ -43,7 +43,7 @@ cd /root && /root/test
 
 PS: 其实 Daemontools，并不关心这个 `run` 是什么，只要是可以执行的就可以。
 
-### 3. 添加Service
+### 3. 添加 Service
 
 把刚才的程序变成服务，执行下面的命令:
 
@@ -59,7 +59,7 @@ $ update-service --remove /srv/test
 
 完成，不过这个时候服务不会自动启动的，要重启 Linux 才有用。需要立即启动的话，就要用到下面说的手动控制了。
 
-### 4. 手工控制Service
+### 4. 手工控制 Service
 
 查询状态
 

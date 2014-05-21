@@ -25,7 +25,7 @@ Github Pages 是通过 Git 来管理静态文件的。
 #### 使用自定义域名
 
 - 在项目根目录添加 `CNAME` 文件，内容为自定义域名。例如，`blog.wizjin.com`
-- 修改 DNS 记录，创建一条 CNAME 记录，指向 Github 页面。例如，｀`wizjin.github.io`
+- 修改 DNS 记录，创建一条 CNAME 记录，指向 Github 页面。例如，`wizjin.github.io`
 
 #### 安装 Jekyll
 

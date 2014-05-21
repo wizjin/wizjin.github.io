@@ -6,7 +6,7 @@ categories: [Linux]
 tags:       [Linux, Screen]
 ---
 
-有时候需要远程登录到liunx服务器，当要运行一些耗时的任务时候就会变得麻烦。因为一旦退出登录，运行的程序就会被杀掉。万一网络不好SSH或者Telnet断了就更加悲剧了。幸好linux下面有screen命令可以解决这个问题。:)
+有时候需要远程登录到 Liunx 服务器，当要运行一些耗时的任务时候就会变得麻烦。因为一旦退出登录，运行的程序就会被杀掉。万一网络不好 SSH 或者 Telnet 断了就更加悲剧了。幸好 Linux 下面有 screen 命令可以解决这个问题。:)
 <!--more-->
 
 ### 1. 直接使用 Screen
@@ -25,7 +25,7 @@ $ screen vim readme
 
 创建一个 screen 用于执行 vim 命令，退出 vim 将会关闭该这个 screen。
 
-### 3. 断开当前screen
+### 3. 断开当前 screen
 
 只需要输入 `Ctrl-a d` 就可以了。
 

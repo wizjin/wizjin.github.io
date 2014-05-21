@@ -9,9 +9,9 @@ tags:       [Mac OSX, Windows]
 最近比较忙，好久没写 Blog 了。前几天新入了一块移动硬盘，格式化成了 NTFS。总算是在 Mac/Windows 下都能读写了，但是发现一个问题。就是在 Mac 下面会看见 Windows 的系统文件，在 Windows 下又能看见 Mac 下的系统文件，不爽！谁让我有洁癖呢！研究了一下，发下一些解决方案。
 <!--more-->
 
-### 1. Mac下面
+### 1. Mac 下面
 
-首先，在Mac下面禁止生成系统文件（.Spotlight-V100，.fseventsd，.Trashes之类的），方法如下:
+首先，在 Mac 下面禁止生成系统文件（.Spotlight-V100，.fseventsd，.Trashes之类的），方法如下:
 
 ```bash
 $ mdutil -i off /Volumes/MyHD
@@ -41,7 +41,7 @@ $ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
 当然，这条不够完美，只对当前账户，当前机器有用。还在继续寻找解决方案中... ...
 
-### 2. Windows下面
+### 2. Windows 下面
 
 Mac 的文件在 Windows 下面是可见的，所以只需要把这些文件全部隐藏就好了:
 

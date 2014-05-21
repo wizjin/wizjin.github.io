@@ -6,10 +6,10 @@ categories: [Mac OSX, Project]
 tags:       [Mavericks]
 ---
 
-要向Github提交代码，首先需要生成Github用的SSH密钥。Mac下面可以使用ssh-gen来完成。
+要向 Github 提交代码，首先需要生成 Github 用的 SSH 密钥。Mac 下面可以使用 ssh-gen 来完成。
 <!--more-->
 
-### 1. 检查SSH是否存在
+### 1. 检查 SSH 是否存在
 
 ```bash
 $ cd ~/.ssh
@@ -17,19 +17,19 @@ $ ls
 # Lists the files in your .ssh directory
 ```
 
-### 2. 生成SSH密钥
+### 2. 生成 SSH 密钥
 
 ```bash
 $ ssh-keygen -t rsa -C "your_email@example.com"
 ```
 
-### 3. 复制SSH密钥，并在Github上添加
+### 3. 复制 SSH 密钥，并在 Github 上添加
 
 ```bash
 $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
-### 4. 检查SSG密钥是否生效
+### 4. 检查 SSH 密钥是否生效
 
 ```bash
 $ ssh -T git@github.com
