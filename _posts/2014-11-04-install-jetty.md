@@ -68,7 +68,8 @@ TMPDIR=/srv/jetty/temp
 ```bash
 $ sudo mkdir -p /srv/jetty/temp
 $ sudo mkdir -p /srv/web/mybase
-$ sudo useradd --user-group --shell /bin/false --home-dir /srv/jetty/temp jetty
+$ sudo useradd --user-group --shell /bin/false --home-dir /srv/jetty/temp 
+$ cd /srv/web/mybase
 $ java -jar /srv/jetty/start.jar --add-to-start=deploy,http,logging
 $ sudo chown --recursive jetty /srv/jetty
 $ sudo chown --recursive jetty /srv/web/mybase
