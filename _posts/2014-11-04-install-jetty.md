@@ -68,7 +68,7 @@ TMPDIR=/srv/jetty/temp
 ```bash
 $ sudo mkdir -p /srv/jetty/temp
 $ sudo mkdir -p /srv/web/mybase
-$ sudo useradd --user-group --shell /bin/false --home-dir /srv/jetty/temp 
+$ sudo useradd --user-group --shell /bin/false --home-dir /srv/jetty/temp jetty
 $ cd /srv/web/mybase
 $ java -jar /srv/jetty/start.jar --add-to-start=deploy,http,logging
 $ sudo chown --recursive jetty /srv/jetty
@@ -81,3 +81,21 @@ $ sudo chown --recursive jetty /srv/web/mybase
 $ sudo service jetty start
 ```
 
+如果要开机自动启动 Jetty，需要修改 `/etc/init.d/jetty`，在头上添加如下内容
+
+```bash
+### BEGIN INIT INFO
+# Provides:          jetty
+# Required-Start:    $network $remote_fs $local_fs 
+# Required-Stop:     $network $remote_fs $local_fs
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Stop/start jetty
+### END INIT INFO
+```
+
+然后，运行命令激活 Jetty
+
+```bash
+$ sudo update-rc.d jetty defaults
+```
