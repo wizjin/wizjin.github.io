@@ -37,12 +37,17 @@ import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.
 
 ```json
 {
+    "font_face": "Source Code Pro",
+    "font_options":["subpixel_antialias"],
 	"gutter": false, 		//是否显示边列
 	"wrap_width": 80, 	//换行宽度(单位：字符)
 	"word_wrap": true,	//是否自动换行
 	"scroll_past_end": true,	//滚动能否超过结尾
 	"ignored_packages":[],	// 支持VIM
 	"tab_size": 4,	// 设置Tab宽度
+    "translate_tabs_to_spaces": true,   // 将 Tab 转换成空格
+    "trim_automatic_white_space": true, // 自动剔除末尾空格
+    "trim_trailing_white_space_on_save": true,  // 在文件保存时剔除末尾空格
 	"theme": "Soda Dark.sublime-theme"	// 设置主题
 }
 ```
