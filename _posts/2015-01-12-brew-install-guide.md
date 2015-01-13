@@ -58,6 +58,7 @@ $ brew install php56
 ```
 
 然后在 `~/.bash_profile` 中添加如下配置，使 PHP 可以在 Terminal 中使用。
+接下来就可以通过修改 `/usr/local/etc/php/5.6/php.ini` 来配置 PHP 了。
 
 ```bash
 export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
@@ -134,6 +135,11 @@ export M2=$M2_HOME/bin
 
 ```bash
 $ brew install scala --with-src
+```
+在 `~/.bash_profile` 中配置 Scala 环境变量。
+
+```bash
+export SCALA_HOME=$(brew --prefix scala)
 ```
 
 ### 安装 Golang
