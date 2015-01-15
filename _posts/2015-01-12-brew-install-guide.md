@@ -44,6 +44,20 @@ $ brew install wget
 $ brew install unrar
 ```
 
+### 安装 Node.js
+
+安装 Node.js 还是比较容易的，只要运行如下命令即可：
+
+```bash
+$ brew install node.js
+```
+
+这里需要注意的是，升级 npm 时候，不能使用 `npm update` 而要使用下列命令：
+
+```bash
+$ npm install -g npm@latest
+```
+
 ### 安装 PHP
 
 由于 Mac OSX 默认的 PHP 有些功能被禁用了，所以使用 Brew 安装一个新的。
@@ -78,6 +92,47 @@ $ mysql_secure_installation
 ```bash
 $ mysql.server start
 $ mysql.server stop
+```
+
+### 安装 Redis
+
+Redis 内存缓存数据库，可以使用如下命令安装。
+
+```bash
+$ brew install redis
+```
+
+手共启动服务可以使用如下方式
+
+```bash
+$ redis-server /usr/local/etc/redis.conf
+```
+
+### 安装 RabbitMQ
+
+消息服务器 RabbitMQ 安装如下。
+
+```bash
+$ brew install rabbitmq
+```
+
+安装完成后要在 `~/.bash_profile` 中添加如下配置
+
+```bash
+export PATH=$PATH:$(brew --prefix)/sbin
+```
+
+另外有几个插件用不到，可以暂时禁用掉。
+
+```bash
+$ rabbitmq-plugins disable --offline rabbitmq_stomp
+$ rabbitmq-plugins disable --offline rabbitmq_mqtt
+```
+
+启动 RabbitMQ Server 只要直接运行如下命令即可。
+
+```bash
+$ rabbitmq-server
 ```
 
 ### 安装 Bash Completion
