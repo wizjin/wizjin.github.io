@@ -74,7 +74,7 @@ redcarpet:
 编辑的时候为了方便可以添加参数如下，
 
 ```bash
-$ bundle exec jekyll serve --watch
+$ bundle exec jekyll serve --host 127.0.0.1 --watch
 ```
 
 这样在修改文件后，会自动更新本地网站。
