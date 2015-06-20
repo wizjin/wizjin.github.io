@@ -10,7 +10,7 @@ url: "http://blog.wizjin.com"
 
 # Build settings
 permalink: /:year/:month/:day/:title
-highlighter: true
+highlighter: pygments
 paginate: 10
 paginate_path: "/pages/:num"
 markdown: redcarpet
